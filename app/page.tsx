@@ -9,7 +9,6 @@ export default function MarylandHotel() {
   const [showBooking, setShowBooking] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState("Classic Room");
   const router = useRouter();
-  const PAYSTACK_KEY = ""; // Leave empty for now
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (u) => setUser(u));
